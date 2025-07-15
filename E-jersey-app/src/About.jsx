@@ -12,10 +12,15 @@ const navigate = useNavigate();
         className="font-bold text-amber-50 bg-black flex justify-around items-center h-16 px-8"
       >
         <div className="text-xl">THE JERSEY</div>
-        <a href="#Home" className="mx-4 hover:text-yellow-400 cursor-pointer" onClick={home}>Home</a>
-        <a href="#Collection" className="mx-4 hover:text-yellow-400 cursor-pointer">Collection</a>
-        <a href="#about" className="mx-4 hover:text-yellow-400 cursor-pointer">About Us</a>
-        <a href="#Questions" className="mx-4 hover:text-yellow-400 cursor-pointer">Questions</a>
+  <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/")}>Home</a>
+          <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/collection")}>Collection</a>
+          <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/about")}>About Us</a>
+          <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/cart")}>
+            </a>
+          <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/cart")}> Cart
+            </a>
+
+
       </div>
      <div className="bg-gradient-to-b from-amber-100 to-white min-h-screen py-10 px-6 ">
   <h1 className="text-4xl font-extrabold text-center text-red-600 mb-6">About Us</h1>

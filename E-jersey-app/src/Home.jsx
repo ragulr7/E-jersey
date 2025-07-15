@@ -40,7 +40,7 @@ useEffect(() => {
         <a href="#Home" className="mx-4 hover:text-yellow-400 cursor-pointer">Home</a>
         <a href="#Collection" className="mx-4 hover:text-yellow-400 cursor-pointer">Collection</a>
         <a href="#About" className="mx-4 hover:text-yellow-400 cursor-pointer" onClick={showAbout}>About Us</a>
-        <a href="#Questions" className="mx-4 hover:text-yellow-400 cursor-pointer">Questions</a>
+        <a href="#Questions" className="mx-4 hover:text-yellow-400 cursor-pointer">Cart 🛒</a>
       </div>
 <div className="w-full h-full overflow-hidden relative">
   <img

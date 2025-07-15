@@ -1,4 +1,5 @@
 import { useNavigate } from "react-router-dom";
+import ManUtd from "./PremierLeague.jsx/ManUtd";
 
 function Collections() {
 
@@ -14,11 +15,9 @@ function about(){
 function collection(){
   navigate("/Collection")
 }
-
-  function goToManUtd() {
-    navigate("/ManUtd");
-  }
-
+function ManUtd(){
+  navigate("/ManUtd")
+}
   return (
     <div >
       <div
@@ -29,17 +28,16 @@ function collection(){
         <a href="#Home" className="mx-4 hover:text-yellow-400 cursor-pointer" onClick={home}>Home</a>
         <a href="#Collection" className="mx-4 hover:text-yellow-400 cursor-pointer" onClick={collection}>Collection</a>
         <a href="#about" className="mx-4 hover:text-yellow-400 cursor-pointer" onClick={about}>About Us</a>
-        <a href="#Questions" className="mx-4 hover:text-yellow-400 cursor-pointer">Questions</a>
+        <a href="#Questions" className="mx-4 hover:text-yellow-400 cursor-pointer">Cart 🛒</a>
       </div>
       
       <div className="flex justify-around items-center">
         <span>
-            <img
-        src="https://www.red.org/wp-content/uploads/2025/01/RED-ManU-Reditorial_FINAL-1.webp"
-        onClick={goToManUtd}
+        <img
+        src="https://www.red.org/wp-content/uploads/2025/01/RED-ManU-Reditorial_FINAL-1.webp" onClick={ManUtd}
         alt="man-utd"
-        className="w-80 h-80 mt-2 ml-2 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-      />
+        className="w-[400px] mt-2 ml-2 h-80 w-80 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300">
+        </img>
         <p className="text-center mt-2 font-semibold text-gray-800">Manchester United </p>
         </span>
         <span>
