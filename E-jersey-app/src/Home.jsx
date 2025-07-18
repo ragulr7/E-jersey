@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { useEffect , useState } from "react";
 import bg from "./assets/rmn.jpg";
 import rm from "./assets/realmadrid.jpg"
-import bc from "./assets/barcelona.jpg"
+import bc from "./assets/barcelona.jpg"  
 
 function Home() {
   const navigate = useNavigate();
@@ -27,7 +27,9 @@ useEffect(() => {
   function showAbout(){
     navigate("/about");
   }
-
+function Laliga(){
+  navigate("/LLCollection")
+}
 
 
   return (
@@ -93,7 +95,7 @@ useEffect(() => {
         src="https://logos-world.net/wp-content/uploads/2023/07/LaLiga-Logo-New.png"
         alt="LaLiga"
         className="w-[400px] mt-5 ml-2 h-auto rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-        onClick={showCollection}
+        onClick={Laliga}
       />
       <p className="text-center mt-2 font-semibold text-gray-800">LaLiga</p>
       </span>

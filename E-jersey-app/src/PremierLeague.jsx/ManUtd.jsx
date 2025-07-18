@@ -9,15 +9,15 @@ function ManUtd() {
   const jerseys = [
     {
       src: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bb34e2d7ef774076b2384c4aecc3c090_9366/Manchester_United_24-25_Home_Jersey_Red_IU1397_HM1.jpg",
-      type: "2024-25 Home Jersey",
+      type: "2024-2025 Home Jersey",
     },
     {
       src: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c0054b97aa8a4feb86159d614c1053a9_9366/Manchester_United_24-25_Away_Jersey_Blue_IU1390_HM1.jpg",
-      type: "2024-25 Away Jersey",
+      type: "2024-2025 Away Jersey",
     },
     {
-      src: "https://assets.manutd.com/AssetPicker/images/0/0/15/128/1016017/CR_Home_61630437203912.jpg",
-      type: "2021-22 Home Jersey",
+      src: "https://mufc-live.cdn.scayle.cloud/images/0dd8a9fe914d7bca2c29eb631fa44e96.jpg?brightness=1&width=922&height=1230&quality=70&bg=ffffff",
+      type: "2024-2025 Third Jersey",
     },
   ];
 
