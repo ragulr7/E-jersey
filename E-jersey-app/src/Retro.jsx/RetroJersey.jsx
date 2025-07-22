@@ -1,26 +1,59 @@
 import React,{useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext";
-function Barcelona(){
+function RetroJersey(){ 
     const navigate = useNavigate(); 
     const {cart , addToCart} =useContext(CartContext);
 
     const jersey =[{
-      src:"https://store.fcbarcelona.com/cdn/shop/files/25100BMF_1.jpg?v=1728911440&width=1946",
-      type:"2024-25 Home Jersey" ,
-      price:300,
+        src:"https://www.copycatz.in/wp-content/uploads/2024/09/portugal-Home-1992-94-retro-jersey.jpeg",
+        type:"Portugal Jersey" ,
+        price:400,
     },
     {
-      src:"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/63f8fb70-f18f-4660-b76f-6c8855debb96/FCB+M+NK+DF+JSY+SS+STAD+AW.png",
-      type: "2024-25 Away Jersey",
-      price:300,
+        src:"https://footballmonk.in/wp-content/uploads/2023/06/ARGENTINA-HOME-1986-RETRO-FOOTBALL-JERSEY_1.jpg",
+        type: "Argentina Jersey",
+        price:400,
     },
     {
-      src:"https://www.soccerbible.com/media/161992/barca-4-min.jpg",
-      type:"2024-2025 Third Jersey" ,
-      price:300
+        src:"https://redravenstore.in/cdn/shop/files/1998_Home_1.jpg?v=1744035648",
+        type:"Brazil Jersey",
+        price:400
     },
+     {
+         src:"https://www.copycatz.in/wp-content/uploads/2024/07/France-home-football-shirt-199800.jpeg",
+         type:"France Jersey",
+         price:400
+        },
+     {
+         src:"https://fulltimestore.in/cdn/shop/files/England1998homefullsleevesretro.jpg?v=1728417764&width=720",
+         type:"England Jersey",
+         price:400
+        },
+     {
+         src:"https://image.made-in-china.com/2f0j00zhIbfDrlOckW/Germany-for-The-1992-Season-Home-Retro-Player-Version-Club-Football-Soccer-Jersey.webp",
+         type:"Germany Jersey",
+         price:400
+        },
+           {
+         src:"https://i.ebayimg.com/images/g/wi0AAOSwsj5jhqOj/s-l1200.jpg",
+         type:"Croatia Jersey",
+         price:400
+        },
+           {
+         src:"https://fanaacs.com/wp-content/uploads/2024/10/Spain1994WorldCupHomeRetroJersey1.jpg",
+         type:"Spain Jersey",
+         price:400
+        },
+           {
+         src:"https://retrosoccerkit.com/cdn/shop/products/a76bf372.jpg?v=1701815952",
+         type:"Italy Jersey",
+         price:400
+        },
+        
+        
   ];
+  
     return( <div className="min-h-screen bg-gray-50">
       <div className="font-bold text-amber-50 bg-black flex flex-wrap justify-center md:justify-around items-center px-4 py-4">
         <div className="text-xl w-full text-center md:w-auto mb-2 md:mb-0">THE JERSEY</div>
@@ -32,8 +65,9 @@ function Barcelona(){
  Cart 🛒 ({cart.length})           </a>
         </div>
       </div>
-      <h1 className="text-center text-4xl mt-10 font-extrabold text-blue-800">Welcome to Barcelona Collection</h1>
-      <div className="flex flex wrap justify-center mt-10 gap-6 px-4">
+      <h1 className="text-center text-4xl mt-10 font-extrabold text-black">Welcome to Retro Collection</h1>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center mt-10 px-4">
+
         {jersey.map((item ,index) =>(
           <div key={index} className="text-center">
             <img src={item.src}                                     
@@ -55,4 +89,4 @@ function Barcelona(){
 );
 }
 
-export default Barcelona;
+export default RetroJersey;

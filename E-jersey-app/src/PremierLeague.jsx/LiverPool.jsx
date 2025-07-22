@@ -8,14 +8,17 @@ function LiverPool(){
     const jersey =[{
       src:"https://www.lifestylesports.com/dw/image/v2/BCDN_PRD/on/demandware.static/-/Sites-LSS_eCommerce_Master/default/dw253edbec/images/56102841xlarge.jpg?sw=530",
       type:"2024-25 Home Jersey" ,
+      price:300,
     },
     {
       src:"https://www.footballshirtculture.com/images/cwgallery/3028-liverpool-24-25-nike-away-kit/3028_liverpool_24_25_nike_away_kit_a.jpg",
       type: "2024-25 Away Jersey",
+      price:300,
     },
     {
       src:"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/3fb05711-bb77-4136-a572-2553bb1531c5/LFC+M+NK+DF+JSY+SS+STAD+3R.png",
-      type:"2024-2025 Third Jersey"
+      type:"2024-2025 Third Jersey",
+      price:300
     },
   ];
     return( <div className="min-h-screen bg-gray-50">
@@ -36,7 +39,7 @@ function LiverPool(){
             <img src={item.src}                                     
             alt= {item.type} className="w-80 h-80 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></img>
             <div className="bg-white border border-gray-300 rounded-md shadow-md p-4 w-72 mx-auto mt-2">
-              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> ₹300</p>
+              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> {item.price}</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Sizes:</span> S, M, L, XL</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Type:</span> {item.type}</p>
               <button onClick={() =>addToCart(item)}

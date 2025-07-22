@@ -8,14 +8,17 @@ function ManCity(){
     const jersey =[{
       src:"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/775050/01/mod01/fnd/IND/fmt/png/Manchester-City-24/25-Men's-Authentic-Home-Jersey",
       type:"2024-25 Home Jersey" ,
+      price:300,
     },
     {
       src:"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/775086/02/mod01/fnd/IND/fmt/png/Manchester-City-24/25-Away-Men's-Football-Jersey",
       type: "2024-25 Away Jersey",
+      price:300,
     },
     {
       src:"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/775096/03/mod01/fnd/IND/fmt/png/Manchester-City-24/25-Authentic-Third-Men's-Football-Jersey",
-      type:"2024-2025 Third Jersey"
+      type:"2024-2025 Third Jersey",
+      price:300
     },
   ];
     return( <div className="min-h-screen bg-gray-50">
@@ -36,7 +39,7 @@ function ManCity(){
             <img src={item.src}                                     
             alt= {item.type} className="w-80 h-80 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></img>
             <div className="bg-white border border-gray-300 rounded-md shadow-md p-4 w-72 mx-auto mt-2">
-              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> ₹300</p>
+              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> {item.price}</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Sizes:</span> S, M, L, XL</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Type:</span> {item.type}</p>
               <button onClick={() =>addToCart(item)}

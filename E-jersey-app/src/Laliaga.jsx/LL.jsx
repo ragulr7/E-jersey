@@ -4,6 +4,8 @@ import RealMadrid from "./RealMadrid";
 import Barcelona from "./Barcelona";
 import Athletic from "./Athletic";
 import Atletico from "./Atletico";
+import Sevilla from "./Sevilla";
+import Valencia from "./Valencia"; 
  
 function LL() {
   return (
@@ -13,6 +15,8 @@ function LL() {
       <Route path="barcelona" element={<Barcelona/>}/>
       <Route path="athletic" element={<Athletic/>}/>
       <Route path="atletico" element={<Atletico/>}/>
+      <Route path="sevilla" element={<Sevilla/>}/>
+      <Route path="valencia" element={<Valencia/>}/>
     </Routes>
   );
 }

@@ -1,23 +1,23 @@
 import React,{useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext";
-function Barcelona(){
+function Valencia(){
     const navigate = useNavigate(); 
     const {cart , addToCart} =useContext(CartContext);
 
     const jersey =[{
-      src:"https://store.fcbarcelona.com/cdn/shop/files/25100BMF_1.jpg?v=1728911440&width=1946",
+      src:"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/939198/01/mod01/fnd/EEA/fmt/png/Valencia-CF-24/25-Home-Jersey-Men",
       type:"2024-25 Home Jersey" ,
       price:300,
     },
     {
-      src:"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/63f8fb70-f18f-4660-b76f-6c8855debb96/FCB+M+NK+DF+JSY+SS+STAD+AW.png",
+      src:"https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_2000,h_2000/global/939223/02/mod01/fnd/EEA/fmt/png/Valencia-CF-24/25-Away-Jersey-Men",
       type: "2024-25 Away Jersey",
       price:300,
     },
     {
-      src:"https://www.soccerbible.com/media/161992/barca-4-min.jpg",
-      type:"2024-2025 Third Jersey" ,
+      src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA030Si_LZ6oCZSe2vmkRXVDmVTCrsC1Ev5A&s",
+      type:"2024-2025 Third Jersey",
       price:300
     },
   ];
@@ -32,7 +32,7 @@ function Barcelona(){
  Cart 🛒 ({cart.length})           </a>
         </div>
       </div>
-      <h1 className="text-center text-4xl mt-10 font-extrabold text-blue-800">Welcome to Barcelona Collection</h1>
+      <h1 className="text-center text-4xl mt-10 font-extrabold text-black">Welcome to Valencia Collection</h1>
       <div className="flex flex wrap justify-center mt-10 gap-6 px-4">
         {jersey.map((item ,index) =>(
           <div key={index} className="text-center">
@@ -55,4 +55,4 @@ function Barcelona(){
 );
 }
 
-export default Barcelona;
+export default Valencia;

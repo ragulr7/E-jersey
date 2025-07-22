@@ -104,7 +104,7 @@ function Laliga(){
         src="https://cdn.bhdw.net/im/fifa-world-cup-with-soccer-ball-on-green-field-in-stadium-wallpaper-95465_w635.webp"
         alt="FiFa"
         className="w-[400px] mt-5 ml-2 h-auto rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-        onClick={showCollection}
+       onClick={() => navigate("/FF")}
       />
       <p className="text-center mt-2 font-semibold text-gray-800">FIFA WorldCup </p>
       </span>
@@ -115,7 +115,7 @@ function Laliga(){
         src="https://topfootball.in/wp-content/uploads/2023/02/AC-Milan-Home-2006-07-Retro-Jersey.jpg.webp"
         alt="Retro"
         className="w-[400px] mt-5 ml-5 h-60 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-        onClick={showCollection}
+        onClick={() => navigate("/retroJersey")}
       />
       <p className="text-center mt-2 font-semibold text-gray-800">Retro Kit</p>
       </span>

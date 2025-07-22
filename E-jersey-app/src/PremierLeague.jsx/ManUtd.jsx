@@ -10,14 +10,17 @@ function ManUtd() {
     {
       src: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/bb34e2d7ef774076b2384c4aecc3c090_9366/Manchester_United_24-25_Home_Jersey_Red_IU1397_HM1.jpg",
       type: "2024-2025 Home Jersey",
+      price:300,
     },
     {
       src: "https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/c0054b97aa8a4feb86159d614c1053a9_9366/Manchester_United_24-25_Away_Jersey_Blue_IU1390_HM1.jpg",
       type: "2024-2025 Away Jersey",
+      price:300,
     },
     {
       src: "https://mufc-live.cdn.scayle.cloud/images/0dd8a9fe914d7bca2c29eb631fa44e96.jpg?brightness=1&width=922&height=1230&quality=70&bg=ffffff",
       type: "2024-2025 Third Jersey",
+      price:300
     },
   ];
 
@@ -48,7 +51,7 @@ function ManUtd() {
               className="w-80 h-80 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
             />
             <div className="bg-white border border-gray-300 rounded-md shadow-md p-4 w-72 mx-auto mt-2">
-              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> ₹300</p>
+              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> {item.price}</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Sizes:</span> S, M, L, XL</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Type:</span> {item.type}</p>
               <button

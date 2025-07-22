@@ -17,7 +17,7 @@ function LLCollection() {
       <div className="flex justify-around items-center mt-8">
         <span>
           <img
-            src="https://www.red.org/wp-content/uploads/2025/01/RED-ManU-Reditorial_FINAL-1.webp"
+            src="https://thefootballheritage.com/wp-content/uploads/2025/01/2425-Real-Madrid-Soccer-Jersey-Home-5.webp"
             onClick={() => navigate("/llcollection/realmadrid")}
             alt="Real Madrid"
             className="w-[400px] h-80 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
@@ -56,8 +56,8 @@ function LLCollection() {
          <span>
           <img
             src="https://thenewkits.com/wp-content/uploads/2024/08/e603f031-1-scaled.jpeg"
- onClick={() => navigate("/llcollection/realmadrid")}
-             alt="realmadrid"
+ onClick={() => navigate("/llcollection/sevilla")}
+             alt="Sevilla"
             className="w-[400px] mt-2 ml-2 h-80 w-80 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
           />
           <p className="text-center mt-2 font-semibold text-gray-800">Sevilla</p>
@@ -65,8 +65,8 @@ function LLCollection() {
          <span>
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ171StZKXqQWVc0hgrZVA0vyKz2UmCQvkcww&s"
- onClick={() => navigate("/llcollection/realmadrid")}
-             alt="realmadrid"
+ onClick={() => navigate("/llcollection/valencia")}
+             alt="valencia"
             className="w-[400px] mt-2 ml-2 h-80 w-80 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
           />
           <p className="text-center mt-2 font-semibold text-gray-800">Valencia</p>

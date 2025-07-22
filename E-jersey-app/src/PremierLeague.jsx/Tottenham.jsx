@@ -8,14 +8,17 @@ function Tottenham (){
     const jersey =[{
       src:"https://kitnation.co.za/cdn/shop/files/IMG_8672_800x.jpg?v=1721215222",
       type:"2024-25 Home Jersey" ,
+      price:300,
     },
     {
       src:"https://images.squarespace-cdn.com/content/v1/6535b8ee271ea56714f48e49/db75b200-f152-40b6-99f3-7ec29316e052/Screenshot+2024-08-19+172723.png?format=1000w",
       type: "2024-25 Away Jersey",
+      price:300,
     },
     {
       src:"https://cdn11.bigcommerce.com/s-5e8c3uvulz/images/stencil/original/products/19277/33565/EMTSS24_Gray_1600x2000__87149.1724705690.png?c=1",
-      type:"2024-2025 Third Jersey"
+      type:"2024-2025 Third Jersey",
+      price:300
     },
   ];
     return( <div className="min-h-screen bg-gray-50">
@@ -36,7 +39,7 @@ function Tottenham (){
             <img src={item.src}                                     
             alt= {item.type} className="w-80 h-80 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></img>
             <div className="bg-white border border-gray-300 rounded-md shadow-md p-4 w-72 mx-auto mt-2">
-              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> ₹300</p>
+              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> {item.price}</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Sizes:</span> S, M, L, XL</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Type:</span> {item.type}</p>
               <button onClick={() =>addToCart(item)}

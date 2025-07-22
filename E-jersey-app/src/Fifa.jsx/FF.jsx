@@ -1,26 +1,59 @@
 import React,{useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext";
-function Barcelona(){
+function FF(){
     const navigate = useNavigate(); 
     const {cart , addToCart} =useContext(CartContext);
 
     const jersey =[{
-      src:"https://store.fcbarcelona.com/cdn/shop/files/25100BMF_1.jpg?v=1728911440&width=1946",
-      type:"2024-25 Home Jersey" ,
-      price:300,
+        src:"https://img.uefa.com/imgml/TP/players/3/2024/cutoff/63706.webp",
+        type:"Portugal Jersey" ,
+        price:300,
     },
     {
-      src:"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/63f8fb70-f18f-4660-b76f-6c8855debb96/FCB+M+NK+DF+JSY+SS+STAD+AW.png",
-      type: "2024-25 Away Jersey",
-      price:300,
+        src:"https://pbs.twimg.com/media/ExFx0YqXEAICjoK.jpg",
+        type: "Argentina Jersey",
+        price:300,
     },
     {
-      src:"https://www.soccerbible.com/media/161992/barca-4-min.jpg",
-      type:"2024-2025 Third Jersey" ,
-      price:300
+        src:"https://i.pinimg.com/736x/34/a4/df/34a4df0276c807c378e0324cc606dafe.jpg",
+        type:"Brazil Jersey",
+        price:300
     },
+     {
+         src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsuigxMtog5fUHmxuSc91yuvNGwhPVF7Ge2A&s",
+         type:"France Jersey",
+         price:300
+        },
+     {
+         src:"https://i.pinimg.com/736x/12/94/88/129488da25692c770608ba068782f603.jpg",
+         type:"England Jersey",
+         price:300
+        },
+     {
+         src:"https://i.pinimg.com/736x/ac/d3/58/acd35859fdf16db716c2a0483829bfa1.jpg",
+         type:"Germany Jersey",
+         price:300
+        },
+           {
+         src:"https://medias.spotern.com/spots/share/377/377979-1669133645.png",
+         type:"Croatia Jersey",
+         price:300
+        },
+           {
+         src:"https://img.uefa.com/imgml/TP/players/3/2024/cutoff/250024448.webp",
+         type:"Spain Jersey",
+         price:300
+        },
+           {
+         src:"https://external-preview.redd.it/optapaolo-3-with-cesare-paolo-and-daniel-maldini-is-the-v0-ZvVp6ZP_IvoV2Onn3qlTn9czCWcHay0it85J8z43v0A.jpg?width=640&crop=smart&auto=webp&s=438f3d81a9667f59273007c828441e9501c44d7e",
+         type:"Italy Jersey",
+         price:300
+        },
+        
+        
   ];
+  
     return( <div className="min-h-screen bg-gray-50">
       <div className="font-bold text-amber-50 bg-black flex flex-wrap justify-center md:justify-around items-center px-4 py-4">
         <div className="text-xl w-full text-center md:w-auto mb-2 md:mb-0">THE JERSEY</div>
@@ -32,8 +65,9 @@ function Barcelona(){
  Cart 🛒 ({cart.length})           </a>
         </div>
       </div>
-      <h1 className="text-center text-4xl mt-10 font-extrabold text-blue-800">Welcome to Barcelona Collection</h1>
-      <div className="flex flex wrap justify-center mt-10 gap-6 px-4">
+      <h1 className="text-center text-4xl mt-10 font-extrabold text-black">Welcome to FIFA Collection</h1>
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center mt-10 px-4">
+
         {jersey.map((item ,index) =>(
           <div key={index} className="text-center">
             <img src={item.src}                                     
@@ -55,4 +89,4 @@ function Barcelona(){
 );
 }
 
-export default Barcelona;
+export default FF;

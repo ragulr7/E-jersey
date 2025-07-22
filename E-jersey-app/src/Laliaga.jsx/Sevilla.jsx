@@ -1,23 +1,23 @@
 import React,{useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext";
-function Barcelona(){
+function Sevilla(){
     const navigate = useNavigate(); 
     const {cart , addToCart} =useContext(CartContext);
 
     const jersey =[{
-      src:"https://store.fcbarcelona.com/cdn/shop/files/25100BMF_1.jpg?v=1728911440&width=1946",
+      src:"https://productimages.footy.com/67228d7891027f58b75d4b68/0/3840.webp?q=75",
       type:"2024-25 Home Jersey" ,
       price:300,
     },
     {
-      src:"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/63f8fb70-f18f-4660-b76f-6c8855debb96/FCB+M+NK+DF+JSY+SS+STAD+AW.png",
+      src:"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEihfOwr1sqqRq1GVjpPItpVxqmig-KK2fKDYSV-3y9iB5U5gh3yxjmPizNMFv4_jCQFU4kfbP83Sb5Xu5Cs1ANtko1-qViBQhWH18LF112lSVoFwEnp8ALcVkZOw3hrgmbqjf62VlOWyiBO9zNU9cGSyPvkm7sxLP7QkmmpQBWVfwOZlxREIxzXSB32q4xl/s1600/sevilla-25-26-away-kit%20%282%29.jpg",
       type: "2024-25 Away Jersey",
       price:300,
     },
     {
-      src:"https://www.soccerbible.com/media/161992/barca-4-min.jpg",
-      type:"2024-2025 Third Jersey" ,
+      src:"https://www.futbolemotion.com/imagesarticulos/224109/grandes/camiseta-castore-sevilla-fc-tercera-equipacion-2024-2025-caviar-2.webp",
+      type:"2024-2025 Third Jersey",
       price:300
     },
   ];
@@ -32,7 +32,7 @@ function Barcelona(){
  Cart 🛒 ({cart.length})           </a>
         </div>
       </div>
-      <h1 className="text-center text-4xl mt-10 font-extrabold text-blue-800">Welcome to Barcelona Collection</h1>
+      <h1 className="text-center text-4xl mt-10 font-extrabold text-red-500">Welcome to Sevilla  Collection</h1>
       <div className="flex flex wrap justify-center mt-10 gap-6 px-4">
         {jersey.map((item ,index) =>(
           <div key={index} className="text-center">
@@ -55,4 +55,4 @@ function Barcelona(){
 );
 }
 
-export default Barcelona;
+export default Sevilla;

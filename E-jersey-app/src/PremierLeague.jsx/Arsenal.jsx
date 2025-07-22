@@ -8,14 +8,17 @@ function Arsenal(){
     const jersey =[{
       src:"https://assets.adidas.com/images/w_600,f_auto,q_auto/ae3acba94965425d920111e06c589522_9366/Arsenal_24-25_Home_Jersey_Red_IT6141_HM1.jpg",
       type:"2024-25 Home Jersey" ,
+      price:300,
     },
     {
       src:"https://pbs.twimg.com/media/GM8VX54W4AA-oOu.jpg",
       type: "2024-25 Away Jersey",
+      price:300,
     },
     {
       src:"https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/5bd1699f2a1a4703bbb0ec611accf9ad_9366/Arsenal_24-25_Third_Authentic_Jersey_Blue_IZ0112_HM1.jpg",
-      type:"2024-2025 Third Jersey"
+      type:"2024-2025 Third Jersey",
+      price:300
     },
   ];
     return( <div className="min-h-screen bg-gray-50">
@@ -36,7 +39,7 @@ function Arsenal(){
             <img src={item.src}                                     
             alt= {item.type} className="w-80 h-80 rounded-lg shadow-md hover:scale-105 transition-transform duration-300"></img>
             <div className="bg-white border border-gray-300 rounded-md shadow-md p-4 w-72 mx-auto mt-2">
-              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> ₹300</p>
+              <p className="text-sm text-gray-700"><span className="font-semibold">Price:</span> {item.price}</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Sizes:</span> S, M, L, XL</p>
               <p className="text-sm text-gray-700"><span className="font-semibold">Type:</span> {item.type}</p>
               <button onClick={() =>addToCart(item)}

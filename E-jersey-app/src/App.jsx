@@ -7,6 +7,8 @@ import About from './About';
 import Cart from './Cart';
 import PL from './PremierLeague.jsx/PL';
 import LL from './Laliaga.jsx/LL'; 
+import FF from './Fifa.jsx/FF';
+import RetroJersey from './Retro.jsx/RetroJersey';
 import { CartProvider } from './CartContext';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/cart" element={<Cart />} />
           <Route path="/llcollection/*" element={<LL />} /> 
           <Route path="/*" element={<PL />} />
+          <Route path="ff" element={<FF/>}/>
+          <Route path="retroJersey" element={<RetroJersey/>}/>
         </Routes>
       </Router>
     </CartProvider>
