@@ -1,7 +1,7 @@
 import React,{useContext} from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../CartContext";
-function FF(){
+function FF(){ 
     const navigate = useNavigate(); 
     const {cart , addToCart} =useContext(CartContext);
 

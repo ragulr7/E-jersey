@@ -58,8 +58,15 @@ if (address.trim() === "") {
                 <img src={item.src} alt="item" className="w-20 h-20 rounded" />
                 <div>
                   <p className="font-semibold">{item.type}</p>
+           {item.name && (
+  <p className="text-sm text-red-600 font-semibold">
+    Customized Name: {item.name}
+  </p>
+)}
+
                   <p className="text-sm text-gray-600">{item.price}</p>
                 </div>
+              
                 <div>
                   <label className="text-sm font-semibold mr-2">
                     Size: {sizes[index] || "Not selected"}

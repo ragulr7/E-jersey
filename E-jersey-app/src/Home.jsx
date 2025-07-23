@@ -1,18 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect , useState } from "react";
-import bg from "./assets/rmn.jpg";
-import rm from "./assets/realmadrid.jpg"
-import bc from "./assets/barcelona.jpg"  
+import rm from "./assets/rm.jpg"
+import ba from "./assets/bc.jpg"
 
-function Home() {
+function Home() { 
   const navigate = useNavigate();
-  const images =[bg ,rm , bc];
+  const images =[rm,ba];
   const[currentIndex , setcurrentIndex] = useState(0);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       setcurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 1000); 
+    }, 3000); 
 
     return () => clearInterval(intervalId); 
   }, []);
@@ -29,6 +28,12 @@ useEffect(() => {
   }
 function Laliga(){
   navigate("/LLCollection")
+}
+function ShowCustomize(){
+  navigate("/customize")
+}
+function ShowMix(){
+  navigate("/mix")
 }
 
 
@@ -48,7 +53,7 @@ function Laliga(){
   <img
     src={images[currentIndex]}
     alt="background" 
-    className="w-full h-full object-cover transition-transform duration-700"
+    className="w-full h-290 object-cover transition-transform duration-700 "
   />
 </div>
 
@@ -59,7 +64,7 @@ function Laliga(){
     <div
       className="flex  animate-slide"
       style={{
-        animation: "slide 5s linear infinite",
+        animation: "slide 10s linear infinite",
       }}
     >
     <p className="border-4 w-40 mt-4 ml-50 text-black rounded-2xl">
@@ -124,7 +129,7 @@ function Laliga(){
         src="https://footballmonk.in/wp-content/uploads/2023/06/Real-madrid-home-Custom-2.jpg"
         alt="Customization"
         className="w-[400px] mt-5 ml-2 h-60 rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-        onClick={showCollection}
+        onClick={ShowCustomize}
       />
       <p className="text-center mt-2 font-semibold text-gray-800">Customize Your Name</p>
       </span>
@@ -134,7 +139,7 @@ function Laliga(){
         alt="Mix-jersey"
         className="w-[400px] mt-5 ml-2 h-60
         rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform duration-300"
-        onClick={showCollection}
+        onClick={ShowMix}
       />
       <p className="text-center mt-2 font-semibold text-gray-800">Mix-Jersey</p>
       </span>
