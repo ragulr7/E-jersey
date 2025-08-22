@@ -63,7 +63,7 @@ function updateName(index, value) {
   
     return( <div className="min-h-screen bg-gray-50">
       <div className="font-bold text-amber-50 bg-black flex flex-wrap justify-center md:justify-around items-center px-4 py-4">
-        <div className="text-xl w-full text-center md:w-auto mb-2 md:mb-0">THE JERSEY</div>
+        <div className="text-xl w-full text-center md:w-auto mb-2 md:mb-0 text-yellow-400">THE JERSEY</div>
         <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
           <a className="hover:text-yellow-400 cursor-pointer"onClick={() => navigate("/")} >Home</a>
           <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/")}>Collection</a>

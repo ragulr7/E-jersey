@@ -34,7 +34,7 @@ function Home() {
   return (
     <div className="bg-black">
       <div className="font-bold text-amber-50 bg-black flex flex-wrap justify-around items-center h-16 px-4 sm:px-8">
-        <div className="text-lg sm:text-xl">THE JERSEY</div>
+        <div className="text-lg sm:text-xl text-yellow-400">THE JERSEY</div>
         <a href="#Home" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer">Home</a>
         <a href="#Collection" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer" >Collection</a>
         <a href="#About" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer" onClick={routes.about}>About Us</a>

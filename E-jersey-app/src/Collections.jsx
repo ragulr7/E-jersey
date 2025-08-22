@@ -43,7 +43,7 @@ function Tottenham(){
     id="Home"
     className="font-bold text-amber-50 bg-black flex flex-wrap justify-around items-center h-16 px-4 sm:px-8"
   >
-    <div className="text-xl">THE JERSEY</div>
+    <div className="text-xl text-yellow-400">THE JERSEY</div>
     <a href="#Home" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer" onClick={home}>Home</a>
     <a href="#Collection" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer" onClick={collection}>Collection</a>
     <a href="#about" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer" onClick={about}>About Us</a>

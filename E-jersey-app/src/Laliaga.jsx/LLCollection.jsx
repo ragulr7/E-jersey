@@ -39,7 +39,7 @@ function LLCollection() {
   return (
     <div>
       <div className="font-bold text-amber-50 bg-black flex flex-wrap justify-around items-center h-16 px-4 sm:px-8 shadow-md">
-        <div className="text-xl sm:text-2xl tracking-wide">THE JERSEY</div>
+        <div className="text-xl sm:text-2xl tracking-wide text-yellow-400">THE JERSEY</div>
         <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/")}>
           Home
         </a>
