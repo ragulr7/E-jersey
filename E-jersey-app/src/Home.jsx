@@ -41,7 +41,7 @@ function Home() {
         <a href="#Cart" className="mx-2 sm:mx-4 hover:text-yellow-400 cursor-pointer" onClick={routes.cart}>Cart 🛒</a>
       </div>
 
-   <div className="w-full overflow-hidden relative">
+   <div className="w-full overflow-hidden relative"> 
   <img
     src={images[currentIndex]}
     alt="background"
