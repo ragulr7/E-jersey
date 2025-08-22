@@ -33,7 +33,7 @@ function Athletico(){
         </div>
       </div>
       <h1 className="text-center text-4xl mt-10 font-extrabold text-blue-600">Welcome to Atlético de Madrid Collection</h1>
-      <div className="flex flex wrap justify-center mt-10 gap-6 px-4">
+      <div className="flex flex-wrap justify-center mt-10 gap-6 px-4">
         {jersey.map((item ,index) =>(
           <div key={index} className="text-center">
             <img src={item.src}                                     

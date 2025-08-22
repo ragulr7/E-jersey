@@ -14,48 +14,48 @@ function updateName(index, value) {
     const jersey =[{
         src:"https://cyberriedstore.com/wp-content/uploads/2024/03/portugal-euro-2024-critiano-ronaldo-home-jersey-product.png",
         type:"Portugal Jersey" ,
-        price:300,
+        price:400,
         
     },
     {
         src:"https://m.media-amazon.com/images/I/41whyUo5I-L.jpg",
         type: "Real madrid Jersey",
-        price:300,
+        price:400,
     },
     {
         src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxDOEqWhVsR1VFaGidU3vuDJUPuUMNctjqOzW5_eF5f8dcjbifNVizutKjVrg46lJcFbs&usqp=CAU",
         type:"Barcelona Jersey",
-        price:300
+        price:400
     },
      {
          src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-xIH8fsfHxAVfHjJ54iJOkLgMv_8tzn4nXg&s",
          type:"Argentina Jersey",
-         price:300
+         price:400
         },
      {
          src:"https://m.media-amazon.com/images/I/61xqF5TTdOL.jpg",
          type:"Barcelona Jersey",
-         price:300
+         price:400
         },
      {
          src:"https://m.media-amazon.com/images/I/51ajORe6JGL._UF894,1000_QL80_.jpg",
          type:"Brazil Jersey",
-         price:300
+         price:400
         },
            {
          src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgdjbalSZBiI-KRSahnMhoWHABe1hTiX5rw&s",
          type:"Arsenal Jersey",
-         price:300
+         price:400
         },
            {
          src:"https://footballmonk.in/wp-content/uploads/2022/07/Manu-home-custom-22-23-2.jpg",
          type:"Manchester United Jersey",
-         price:300
+         price:400
         },
            {
          src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQvBMMoGA987lVNr4OGVdVmgb4yu9901rhHw&s",
          type:"Liverpool Jersey",
-         price:300 
+         price:400 
         },
         
         
@@ -66,7 +66,7 @@ function updateName(index, value) {
         <div className="text-xl w-full text-center md:w-auto mb-2 md:mb-0">THE JERSEY</div>
         <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
           <a className="hover:text-yellow-400 cursor-pointer"onClick={() => navigate("/")} >Home</a>
-          <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/LLCollection")}>Collection</a>
+          <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/")}>Collection</a>
           <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/About")}>About Us</a>
           <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/Cart")} >
  Cart 🛒 ({cart.length})           </a>

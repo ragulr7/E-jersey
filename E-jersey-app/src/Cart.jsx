@@ -6,7 +6,10 @@ function Cart() {
   const navigate = useNavigate();
   const [address , setAddress] = useState();
   const { cart, removeFromCart } = useContext(CartContext); 
-  const totalPrice = cart.reduce((sum, item) => sum + item.price, 0);
+const originalTotal = cart.reduce((sum, item) => sum + item.price, 0);
+const discount = originalTotal >= 2000 ? 200 : 0;
+const finalTotal = originalTotal - discount;
+
 
   const [sizes, setSizes] = useState([]);
 
@@ -31,8 +34,6 @@ if (address.trim() === "") {
   alert("Please enter the address");
   return;
 }
-
-
   alert("Order Placed");
   window.location.reload(); 
 }
@@ -42,7 +43,7 @@ if (address.trim() === "") {
       <div className="font-bold text-amber-50 bg-black flex justify-around items-center h-16 px-8">
         <div className="text-xl">THE JERSEY</div>
         <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/")}>Home</a>
-        <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/collection")}>Collection</a>
+        <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/")}>Collection</a>
         <a className="hover:text-yellow-400 cursor-pointer" onClick={() => navigate("/about")}>About Us</a>
         <a className="hover:text-yellow-400 cursor-pointer">Cart 🛒</a>
       </div>
@@ -64,7 +65,7 @@ if (address.trim() === "") {
   </p>
 )}
 
-                  <p className="text-sm text-gray-600">{item.price}</p>
+                  
                 </div>
               
                 <div>
@@ -93,10 +94,18 @@ if (address.trim() === "") {
                 
                 </div>  
               </li>
+              
             ))}
-             <div className="text-right font-semibold text-lg text-black pr-6 mt-4">
-  Total Price: ₹{totalPrice}
+
+          
+<div className="text-right font-semibold text-lg text-black pr-6 mt-4">
+  <p>Original Price: ₹{originalTotal}</p>
+  {discount > 0 && (
+    <p className="text-green-600 font-semibold">₹{discount} OFF Applied!</p>
+  )}
+  <p className="text-xl mt-1">Total Price: ₹{finalTotal}</p>
 </div>
+
                 <div className="mt-4 p-4 max-w-xl mx-auto bg-white shadow-md rounded-md">
       <label className="block text-lg font-bold mb-1">Address:</label>
       <p className="mb-2 text-gray-700">

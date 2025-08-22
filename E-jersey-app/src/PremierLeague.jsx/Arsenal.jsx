@@ -33,7 +33,7 @@ function Arsenal(){
         </div>
       </div>
       <h1 className="text-center text-4xl mt-10 font-extrabold text-red-600">Welcome to Arsenal Collection</h1>
-      <div className="flex flex wrap justify-center mt-10 gap-6 px-4">
+      <div className="flex flex-wrap justify-center mt-10 gap-6 px-4">
         {jersey.map((item ,index) =>(
           <div key={index} className="text-center">
             <img src={item.src}                                     

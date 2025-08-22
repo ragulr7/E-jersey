@@ -59,7 +59,7 @@ function FF(){
         <div className="text-xl w-full text-center md:w-auto mb-2 md:mb-0">THE JERSEY</div>
         <div className="flex flex-wrap justify-center gap-6 text-sm md:text-base">
           <a className="hover:text-yellow-400 cursor-pointer"onClick={() => navigate("/")} >Home</a>
-          <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/LLCollection")}>Collection</a>
+          <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/")}>Collection</a>
           <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/About")}>About Us</a>
           <a className="hover:text-yellow-400 cursor-pointer" onClick={()=> navigate("/Cart")} >
  Cart 🛒 ({cart.length})           </a>
